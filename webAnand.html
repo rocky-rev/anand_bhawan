@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anand Bhawan - Near Baba Baidyanath Mandir</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-blue': '#1f2937', // Deep Navy (for background/headers)
+                        'accent-gold': '#f97316', // Vibrant Saffron (for buttons/highlights)
+                        'bg-light': '#f9fafb',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for aesthetic enhancements */
+        .card-shadow {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .text-accent-gold {
+      transition: all 0.3s ease-in-out;
+    }
+
+    .text-accent-gold:hover {
+      color: #ffffffe8;
+    }
+
+        /* --- For Smooth Scrolling --- */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body id="top" class="font-sans bg-bg-light text-gray-800">
+
+    <header class="bg-primary-blue text-white shadow-lg sticky top-0 z-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#top" class="text-3xl font-bold tracking-tight text-accent-gold">Anand Bhawan</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#rooms" class="text-lg hover:text-accent-gold transition duration-300">Rooms & Hall</a>
+                        <a href="#facilities" class="text-lg hover:text-accent-gold transition duration-300">Amenities</a>
+                        <a href="#inquiry" class="text-lg hover:text-accent-gold transition duration-300 bg-accent-gold py-2 px-4 rounded-full hover:bg-white hover:text-primary-blue">Book Now</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button id="menu-button" type="button" class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        ☰
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="hidden md:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#rooms" class="mobile-link text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Rooms & Hall</a>
+                <a href="#facilities" class="mobile-link text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Amenities</a>
+                <a href="#inquiry" class="mobile-link text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Book Now</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative h-screen flex items-center justify-center bg-cover bg-center bg-fixed" 
+             style="background-image: url('https://images.pexels.com/photos/2449547/pexels-photo-2449547.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="z-10 text-center p-6 max-w-4xl" data-aos="zoom-in" data-aos-duration="1500">
+            <h2 class="text-5xl sm:text-6xl font-extrabold text-white mb-4 leading-tight tracking-wide">Stay Close to the Divine</h2>
+            <p class="text-xl sm:text-2xl text-gray-100 font-light mb-8">Comfortable, secure, and affordable accommodation near Baba Baidyanath Mandir.</p>
+            <a href="#inquiry" class="inline-block bg-accent-gold text-white font-bold text-xl py-4 px-10 rounded-full shadow-2xl hover:bg-orange-600 transition duration-300 transform hover:scale-105">Check Availability</a>
+        </div>
+    </section>
+
+    <section id="rooms" class="py-16 sm:py-24 bg-white" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-4xl font-bold text-center text-primary-blue mb-12" data-aos="fade-down">Accommodation Options</h3>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="group bg-white rounded-xl overflow-hidden card-shadow transform hover:bg-primary-blue transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?q=80&w=800&auto=format&fit=crop" alt="Comfortable Air Conditioned Room" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-semibold text-primary-blue mb-2 group-hover:text-white transition-colors duration-300">Air Conditioned Double Room</h4>
+                        <p class="text-gray-600 mb-4 group-hover:text-gray-300 transition-colors duration-300">Ideal for couples or small families. Enjoy premium comfort with controlled cooling.</p>
+                        <ul class="text-sm text-gray-700 list-disc ml-5 space-y-1 group-hover:text-gray-300 transition-colors duration-300">
+                            <li>Capacity: Ideal for 3-4 people</li>
+                            <li>Comfortable Double Bed</li>
+                            <li>Attached Bathroom with Geyser</li>
+                            <li>Dedicated AC Unit</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="group bg-white rounded-xl overflow-hidden card-shadow transform hover:bg-primary-blue transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Economical Non-AC Room" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-semibold text-primary-blue mb-2 group-hover:text-white transition-colors duration-300">Non-AC Double Room</h4>
+                        <p class="text-gray-600 mb-4 group-hover:text-gray-300 transition-colors duration-300">An economical and comfortable option for pilgrims and short stays.</p>
+                        <ul class="text-sm text-gray-700 list-disc ml-5 space-y-1 group-hover:text-gray-300 transition-colors duration-300">
+                            <li>Capacity: Ideal for 3-4 people</li>
+                            <li>Attached Bathroom with Geyser</li>
+                            <li>Comfortable Bedding Provided</li>
+                            <li>24-Hour Electricity Backup</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="group bg-white rounded-xl overflow-hidden card-shadow transform hover:bg-primary-blue transition duration-300" data-aos="fade-up" data-aos-delay="500">
+                    <img src="https://images.pexels.com/photos/6782470/pexels-photo-6782470.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Clean dormitory hall for groups" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-semibold text-primary-blue mb-2 group-hover:text-white transition-colors duration-300">Group Accommodation Hall</h4>
+                        <p class="text-gray-600 mb-4 group-hover:text-gray-300 transition-colors duration-300">Spacious hall designed to comfortably house larger groups visiting the temple.</p>
+                        <ul class="text-sm text-gray-700 list-disc ml-5 space-y-1 group-hover:text-gray-300 transition-colors duration-300">
+                            <li>Capacity: Up to 10-15 People</li>
+                            <li>Attached Bathrooms</li>
+                            <li>Fan/Cooler Available</li>
+                            <li>Ideal for Yatri Groups</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="facilities" class="py-16 sm:py-24 bg-bg-light" data-aos="fade-up" data-aos-delay="100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-4xl font-bold text-center text-primary-blue mb-12">Essential Guest Amenities</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="group text-center p-6 bg-white rounded-xl card-shadow transform hover:bg-primary-blue hover:text-white transition duration-300" data-aos="zoom-in" data-aos-delay="100">
+                    <svg class="w-16 h-16 mx-auto mb-4 text-accent-gold group-hover:text-white transition-colors duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
+                    <h4 class="text-xl font-semibold mb-2">Prime Location</h4>
+                    <p class="text-sm text-gray-600 group-hover:text-gray-200 transition-colors duration-300">Located just a short walk from the holy **Baba Baidyanath Mandir**.</p>
+                </div>
+                <div class="group text-center p-6 bg-white rounded-xl card-shadow transform hover:bg-primary-blue hover:text-white transition duration-300" data-aos="zoom-in" data-aos-delay="200">
+                    <svg class="w-16 h-16 mx-auto mb-4 text-accent-gold group-hover:text-white transition-colors duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.286zm0 13.036h.008v.008h-.008v-.008z" /></svg>
+                    <h4 class="text-xl font-semibold mb-2">24/7 Security</h4>
+                    <p class="text-sm text-gray-600 group-hover:text-gray-200 transition-colors duration-300">Ensuring your safety with **round-the-clock CCTV** surveillance in common areas.</p>
+                </div>
+                <div class="group text-center p-6 bg-white rounded-xl card-shadow transform hover:bg-primary-blue hover:text-white transition duration-300" data-aos="zoom-in" data-aos-delay="300">
+                    <svg class="w-16 h-16 mx-auto mb-4 text-accent-gold group-hover:text-white transition-colors duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" /></svg>
+                    <h4 class="text-xl font-semibold mb-2">Uninterrupted Service</h4>
+                    <p class="text-sm text-gray-600 group-hover:text-gray-200 transition-colors duration-300">Reliable **24-hour water and electricity** supply for a hassle-free stay.</p>
+                </div>
+                <div class="group text-center p-6 bg-white rounded-xl card-shadow transform hover:bg-primary-blue hover:text-white transition duration-300" data-aos="zoom-in" data-aos-delay="400">
+                    <svg class="w-16 h-16 mx-auto mb-4 text-accent-gold group-hover:text-white transition-colors duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.25 10.5V6.75a4.5 4.5 0 00-8.59-2.228 4.5 4.5 0 00-1.173 6.942 3 3 0 115.013 4.285 3 3 0 014.242 0 3 3 0 01.566 4.242 4.5 4.5 0 008.238-2.527V10.5a1.5 1.5 0 00-1.5-1.5h-1.5a1.5 1.5 0 00-1.5 1.5z" /></svg>
+                    <h4 class="text-xl font-semibold mb-2">Hot Water Facility</h4>
+                    <p class="text-sm text-gray-600 group-hover:text-gray-200 transition-colors duration-300">Every attached bathroom is fitted with a **geyser** for hot water on demand.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="inquiry" class="py-16 sm:py-24 bg-primary-blue" data-aos="fade-down">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-4xl font-bold text-center text-accent-gold mb-4">Book Your Stay / Inquiry</h3>
+            <p class="text-lg text-white text-center mb-10">Submit your details below for availability and group bookings. We'll reply within 24 hours.</p>
+            <form name="hotel-inquiry" method="POST" data-netlify="true" class="space-y-6 bg-white p-8 rounded-xl card-shadow" data-aos="zoom-in-up" data-aos-delay="100">
+                <input type="hidden" name="form-name" value="hotel-inquiry" />
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                    <input type="text" name="name" id="name" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-accent-gold focus:border-accent-gold transition duration-150">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email Address (Mandatory for Reply)</label>
+                    <input type="email" name="email" id="email" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-accent-gold focus:border-accent-gold transition duration-150">
+                </div>
+                <div>
+                    <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number (Mandatory for Reply)</label>
+                    <input type="tel" name="phone" id="phone" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-accent-gold focus:border-accent-gold transition duration-150">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">Your Inquiry / Check-in Dates / Group Size</label>
+                    <textarea name="message" id="message" rows="4" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-accent-gold focus:border-accent-gold transition duration-150"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-lg text-lg font-medium text-white bg-accent-gold hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent-gold transition duration-300 transform hover:scale-[1.01]">
+                        Send Inquiry
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="mb-2">&copy; 2025 Anand Bhawan. All Rights Reserved.</p>
+            <p class="text-sm text-gray-400">Located near Baba Baidyanath Mandir | Contact: anandbhawan@yatriniwas.com</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+    <script>
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+    </script>
+    
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        // Toggle menu visibility when hamburger button is clicked
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Hide menu when any of the mobile links are clicked
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
